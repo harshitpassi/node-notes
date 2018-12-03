@@ -39,3 +39,10 @@
   
   console.log(buffer2.toString()); // -> "the content"
   ```
+* Decoding Buffer:
+  * can be converted to utf-8 and base64 strings:
+  ```javascript
+  var utf8String = 'my string';
+  var buf = new Buffer(utf8String);
+  var base64String = buf.toString('base64');
+  ```
